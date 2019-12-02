@@ -79,7 +79,7 @@ proc SH.SetRandomBG uses ebx
      ret
 endp
 
-include 'Model.c'
+include 'Model.asm'
 
 proc SH.LoadHeroBM uses esi
      invoke     GetModuleHandle, nil
@@ -238,7 +238,7 @@ endp
 
 section '.data' data readable writeable
 
-include 'Model.d'
+include 'Model.data'
 
 SH.WindowClassEx                WNDCLASSEX      sizeof.WNDCLASSEX, 0, SH.WindowProc, 0, 4, 0, 0, 0, COLOR_BTNFACE + 1, nil, SH.ClassName, 0
 SH.ClassName                    du              'TStickHero', 0
