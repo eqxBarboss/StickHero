@@ -1,2 +1,2 @@
 # StickHero
-Stick Hero mobile game clone done with assembly language and Win32 API.
+Stick Hero mobile game clone done implemented assembly language and Win32 API.
